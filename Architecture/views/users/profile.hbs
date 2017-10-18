@@ -1,0 +1,16 @@
+<table style="width:100%">
+    <tr>
+        <th>Mark</th>
+        <th>Model</th>
+        <th>Production Year</th>
+        <th>Rent Time</th>
+    </tr>
+    {{#each dataObj}}
+    <tr>
+        <td>{{this.mark}}</td>
+        <td>{{this.model}}</td>
+        <td>{{this.year}}</td>
+        <td>{{this.days}}</td>
+    </tr>
+    {{/each}}
+</table>

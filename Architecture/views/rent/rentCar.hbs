@@ -1,0 +1,15 @@
+<form action="/rent/{{car._id}}" method="post">
+    <fieldset>
+        <legend>Rent a Car:</legend>
+        <p>{{car.mark}}</p>
+        <p>{{car.model}}</p>
+        <img src="{{car.image}}" alt="carImage">
+        <p>{{car.year}}</p>
+        <p> Price: $ {{car.pricePerDay}}</p>
+
+         Days:<br>
+        <input type="number" name="days" placeholder="Days for rental"><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+

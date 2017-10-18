@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Demo Server</title>
+    <link href="/css/site.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <ul class="menu">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                {{#if currentUser}} {{#if currentUser.isAdmin}}
+                <li>
+                    <a href="/addCar">Add Car</a>
+                </li>
+                {{/if}}
+                <li>{{currentUser.username}}</li>
+                <li>
+                    <a href="/viewAll?page=0">View All</a>
+                </li>
+                <li>
+                    <a href="/userProfile/{{currentUser.id}}">My Profile</a>
+                </li>
+                <li>
+                    <form id="logout-form" action="/logout" method="post"></form>
+                    <a href="javascript:document.getElementById('logout-form').submit()">Logout</a>
+                </li>
+                {{else}}
+                <li>
+                    <a href="/login">Login</a>
+                </li>
+                <li>
+                    <a href="/register">Register</a>
+                </li>
+                {{/if}}
+                <form action="/search">
+                    <fieldset>
+                        <legend>Search:</legend>
+                        Year:
+                        <br>
+                        <input type="text" name="year">
+                        <br>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+
+            </ul>
+        </header>
+        <main>
+            {{#if globalError}}
+            <span>{{globalError}}</span> {{/if}} {{{body}}}
+        </main>
+    </div>
+</body>
+
+</html>

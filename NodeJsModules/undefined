@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <nav>
+                <a href="/" class="logo"><img class="logo" src="/public/images/nodeLogo.png" alt="nodeLogo"></a>
+                <input type="checkbox" id="nav" /><label for="nav"></label>
+                <ul>
+                    <li><a href="/addMeme">Add Meme</a></li>
+                    <li><a href="/viewAllMemes">View All Memes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <img src="./public/memeStorage/1/SkgnsWRb3Z.jpg" alt=""/>
+        <h3>Title  Jerry Smith</h3>
+        <p> Jerry Smith is the husband of Beth Smith, and the father to Summer Smith and a deceased Morty, although he currently acts as the father, and son-in-law, of the Morty Smith and Rick Sanchez from Dimension C-137, respectively. He shares the same history as his C-137 counterpart until the Cronenberg disaster, where it was averted in his dimension.
+
+Jerry always tries to think of the best interest of the family, but his attempt to be the patriarch of the family can often be misguided by his self-centered nature. This causes him a great deal of conflict with Rick, as his father-in-law clearly has no respect for him whatsoever.
+
+</p>
+        <button><a href="undefined">Download Meme</a></button>
+        </div>
+</body>
+
+</html>
